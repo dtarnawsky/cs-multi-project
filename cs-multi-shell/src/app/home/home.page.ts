@@ -12,6 +12,6 @@ export class HomePage {
   constructor() { }
 
   open(app: string) {
-
+    location.href = `/${app}/index.html`;
   }
 }
