@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Company Name</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Company Name</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="frame">
+    <ion-button *ngIf="!busy" (click)="signIn()" mode="ios" color="dark" fill="outline" size="large">Sign In /
+      Up</ion-button>
+  </div>
+</ion-content>
