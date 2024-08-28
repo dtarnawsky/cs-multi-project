@@ -1,9 +1,39 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
+import { ProviderOptions } from '@ionic-enterprise/auth';
 
 export const environment = {
   production: false
+};
+
+export const urlSchemeIonicAuthOptions: ProviderOptions = {
+  audience: '',
+
+  // client or application id for provider
+  clientId: '0oaur4c907I5uMr4I0h7',
+  // the discovery url for the provider
+  // OpenID configuration
+  discoveryUrl: 'https://dev-622807.oktapreview.com/.well-known/openid-configuration',
+  // the URI to redirect to after log in
+  redirectUri: 'ionic.cs.multiauth://auth-transition',
+  // requested scopes from provider
+  scope: 'openid email profile offline_access',
+  // the URL to redirect to after log out
+  logoutUrl: 'ionic.cs.multiauth://logging-out',
+};
+
+export const webIonicAuthOptions: ProviderOptions = {
+  audience: 'https://audience.my-app.com',
+
+  // client or application id for provider
+  clientId: '0oaur4c907I5uMr4I0h7',
+  // the discovery url for the provider
+  // OpenID configuration
+  discoveryUrl: 'https://dev-622807.oktapreview.com/.well-known/openid-configuration',
+  // the URI to redirect to after log in
+  redirectUri: 'http://localhost:8100/auth-transition',
+  // requested scopes from provider
+  scope: 'openid email profile offline_access',
+  // the URL to redirect to after log out
+  logoutUrl: 'http://localhost:8100/auth-transition#logout'
 };
 
 /*

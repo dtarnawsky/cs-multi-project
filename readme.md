@@ -29,5 +29,8 @@ To return to the shell application you can call:
 location.href = `../index.html`;
 ```
 
-
+## Authentication
+Login using the credentials: 
+- Username: `test@ionic.io`
+- Password: `Ion54321`
 
